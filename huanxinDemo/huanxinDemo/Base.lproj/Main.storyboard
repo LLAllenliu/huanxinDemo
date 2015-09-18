@@ -49,6 +49,9 @@
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInButtonDIdClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vrd-Nc-2Jn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbG-dC-aDe">
                                         <rect key="frame" x="69" y="153" width="218" height="30"/>
@@ -58,12 +61,21 @@
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonDIdClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6eC-Ff-5Hg"/>
+                                        </connections>
                                     </button>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O4m-Nk-BdP">
                                         <rect key="frame" x="154" y="202" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="savePasswordButtonDidClick:" destination="vXZ-lx-hvc" eventType="valueChanged" id="DTt-II-uR0"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thX-QC-Z7K">
                                         <rect key="frame" x="154" y="252" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="autoLoginButtonDidClick:" destination="vXZ-lx-hvc" eventType="valueChanged" id="dcb-oA-YEZ"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="自动登陆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1U-Dk-EkR">
                                         <rect key="frame" x="69" y="252" width="68" height="21"/>
@@ -92,6 +104,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="登陆界面" id="E6t-eX-hqu"/>
+                    <connections>
+                        <outlet property="accountLabel" destination="v6k-5f-pwU" id="ifT-FA-2Ve"/>
+                        <outlet property="autoLoginButton" destination="thX-QC-Z7K" id="e9s-ug-YSm"/>
+                        <outlet property="loginButton" destination="PbG-dC-aDe" id="MGS-Ag-h7O"/>
+                        <outlet property="passwordLabel" destination="SLW-V0-cGu" id="FMs-4Y-pqo"/>
+                        <outlet property="savePasswordButton" destination="O4m-Nk-BdP" id="psD-V8-gXT"/>
+                        <outlet property="signInButton" destination="RRp-Zl-UlT" id="MIS-EM-ryA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

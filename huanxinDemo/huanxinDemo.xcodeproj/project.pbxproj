@@ -107,6 +107,7 @@
 		2C3B3B7F1BABD1C100B68984 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C3B3BA71BABD1E100B68984 /* huanxinDemo.pch */,
 				2C3B3B8C1BABD1C100B68984 /* Images.xcassets */,
 				2C3B3B801BABD1C100B68984 /* Info.plist */,
 			);
@@ -168,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				2C3B3BA81BABD1E100B68984 /* main.m */,
-				2C3B3BA71BABD1E100B68984 /* huanxinDemo.pch */,
 				2C3B3BA91BABD1E100B68984 /* README.txt */,
 			);
 			name = Sources;
