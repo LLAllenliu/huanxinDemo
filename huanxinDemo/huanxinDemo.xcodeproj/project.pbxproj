@@ -237,6 +237,7 @@
 		2C3B3B741BABD1C100B68984 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZT;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = com.zhengtongit;
 				TargetAttributes = {
