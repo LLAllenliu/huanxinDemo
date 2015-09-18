@@ -1,0 +1,17 @@
+//
+//  huanxinDemo.pch
+//  huanxinDemo
+//
+//  Created by 刘良 on 15/9/18.
+//  Copyright (c) 2015年 com.zhengtongit. All rights reserved.
+//
+
+#ifndef huanxinDemo_huanxinDemo_pch
+#define huanxinDemo_huanxinDemo_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//环信头文件,包含实时语音
+#import <EaseMobSDKFull/EaseMob.h>
+
+#endif
